@@ -1,0 +1,15 @@
+node_modules/
+.env
+.env.local
+server/.env
+dist/
+build/
+*.bak
+*.bak[0-9]
+*.old
+*.orig
+patch_app.py
+*.log
+.DS_Store
+.vscode/
+.idea/

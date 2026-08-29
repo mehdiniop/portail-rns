@@ -1,0 +1,21 @@
+{
+  "name": "rns-portail",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Portail libre-service ServiceNow — client React et proxy Express.",
+  "scripts": {
+    "postinstall": "npm install --prefix server && npm install --prefix client",
+    "prestart": "node scripts/check-env.js",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "start": "concurrently -n proxy,client -c cyan,magenta \"npm:dev:server\" \"npm:dev:client\"",
+    "check": "node scripts/check-env.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
