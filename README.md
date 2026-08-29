@@ -12,14 +12,14 @@ fourni par ton enseignant.
 
 ```bash
 git clone <URL_DU_DEPOT>
-cd RNS
+cd portail-rns
 npm install
 ```
 
 Dépose ensuite le fichier `.env` reçu dans le dossier **`server/`** :
 
 ```
-RNS/
+portail-rns/
 ├── client/
 ├── server/
 │   └── .env      ← ici
